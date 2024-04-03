@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Courier+Prime&family=Josefin+Sans:ital,wght@0,100;0,200;1,300&family=Montserrat+Alternates:wght@300&family=Playpen+Sans:wght@200;700&family=Roboto+Mono:ital,wght@0,200;0,300;1,300&family=Roboto:ital,wght@1,100&family=Sometype+Mono&family=Tilt+Neon&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=BioRhyme:wght@200&family=Space+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Courier+Prime&family=Josefin+Sans:ital,wght@0,100;0,200;1,300&family=Montserrat+Alternates:ital,wght@0,300;1,300;1,400&family=Playpen+Sans:wght@200;700&family=Roboto+Mono:ital,wght@0,200;0,300;1,300&family=Roboto:ital,wght@1,100&family=Sometype+Mono&family=Tilt+Neon&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+$(document).ready(function(){
+  $(".button1").click(function(){
+    $("p").hide();
+  });
+});
+$(document).ready(function(){
+  $(".button2").click(function(){
+    $("p").show();
+  });
+});
+  </script>
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+<div class="box">
+  <h1> C O L O R S </h1>
+  <p> An intro to colors in style css by MINIONS
+  Esmhan, Vanessa, Xue, Liz</p>
+</div>
+
+<div class="box">
+    <button class="button1"> click me for a suprise haha </button>
+    <button class="button2"> click me for a better suprise haha </button>
+</div>
+ <div class="box">
+<h2> Complementary colors </h2>
+<p>Complementary Colors are colors that are in the contrast of one another on the color wheel.When asked to code about them you are often given their hex code.To code a complementary color you name the color you would like then you add a { } braket,put background-color: and the hex code.  </p>
+   <pre><code class="language-css">
+       .blue {
+         background-color: blue;
+       }
+       .yellow {
+         background-color: yellow;
+       }
+   </code></pre>
+</div>
+
+
+
+<div class="box">
+  <h2>Adjust the Color of Various Elements to Complementary Colors</h2>
+  <p> In this lesson we use two colors that are complementary to each other.
+  Example: This page will use a shade of teal (#09A7A1) as the dominant color, and it's orange (#FF790E) complementary color.These colors  opposite of each other on the color wheel can make each other appear more vibrant when placed side-by-side.
+</p>
+  <img  class="Colors" src="IMG_0109.jpeg">
+  <pre><code class="language-css">
+      header {
+        background-color: #09A7A1;
+        color: white;
+        padding: 0.25em;
+      }
+      h2 {
+        color: #09A7A1;
+      }
+      button {
+        background-color: #FF790E;
+      }
+      footer {
+        background-color: #09A7A1;
+        color: white;
+        padding: 0.5em;
+
+   </code></pre>
+</div>
+
+<div class="box">
+  <h2> Tertiary colors/ Background textures</h2>
+
+<p>There are three types of the colors that we mix in to create our colors in CSS and HTML. As i would like to call it the "three main sections of the cololrs combination."</p>
+
+  <p>Primary colors
+  Are colors that are the first of the basics that make up all of our other colors. For example: Red,blue and Yellow </p>
+
+  <p>Secondary colors
+  The colors that were made from the Primary colors in short as its second to the primary. For example: Orange, Green, Violet.</p>
+
+  <p>Tertiary colors are the colors made from Primary and Secondary colors, which would be for example: blue-violet,red-violet and yellow-orange, with it being the last of the combination</p>
+
+  <p> Background textures in my simple explanation is by you in which on what you want your background to be. For exmaple if you want your background to look like cheese put a cheese img like this. "Background: url(your link of image)." [in short terms fro like a background image you use in the google slides]
+
+    <code class="language-html"> &lt;background: url(your image link)&gt;</code></p>
+  <img class="Primary"src="IMG_0110.jpeg"
+</div>
+
+<div class="box">
+
+  <h2> Gradients </h2>
+  <p> gradient functions add a ombre visual to any element you apply it to. This can range from making your background to container look like a warm sunset, or making fun designs and stripes using this nifty function</p>
+    <h2> What you can do with gradients</h2>
+
+     <p>  make a soft gradient from one color to another  </p>
+
+      <pre><code class="language-css">
+           div{
+        background-image: linear-gradient(to right, pink, blue );
+          }
+      </code></pre>
+
+     <p> Make a harsher gradient that repeats </p>
+    <pre><code class="language-css">
+         div{
+      background-image: repeating-linear-gradient(to right, purple 20%, blue 40%, green 40% );
+        }
+    </code></pre>
+</div>
+
+<div  class="box">
+  <h2>Hue and tone of color using HSL elements</h2>
+  <p>Hue is the color wheel, saturation is the color intensity, and lightness is the the amount of white or black is added to it. Using hsl() we can use values from 0 to 360. For example, if we want the color blue, the first value will be the hue, 240, the 2nd value would be the saturation,100% and the last value would be the lightness,50%. To fine more unique colors, you can search up hsl sliders and in order jt will be from hue to saturation to lightness.</p>
+  <img class="Hues" src="IMG_0108.jpeg">
+
+   <pre><code class="language-css">
+     color: hsl(hue number, saturation number, lightness number);
+     </code></pre>
+</div>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
+</body>
+
+</html>

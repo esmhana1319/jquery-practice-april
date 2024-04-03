@@ -1,0 +1,60 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+
+  div{
+    text-align: center;
+  }
+
+  body{
+    background: url("banana.jpg");
+    margin: 40px 50px;
+    padding: 40px;
+  }
+
+  .box{
+    background-color: #ffd84d;
+    border-radius: 1%;
+    border-style: solid;
+    border-width: 8px;
+    border-color:#cf9e07;
+    margin: 25px;
+    padding: 10px;
+  }
+  h1, h2, p{
+    color:#a77b02;
+    font-family: Agbalumo;
+    border-style: dashed;
+
+  }
+
+  h2{
+      background-color: #fdf89b;
+   border-radius: 70px;
+  border-style: outset;
+  border-color: #f6bc09;
+    font-family: Agbalumo;
+    color: #cf9e07;
+  }
+
+  p{
+    background-color:#fff8d0;
+    border-radius: 50px;
+    padding: 35px;
+    border-style: dashed;
+    border-color:  #cf9e07;
+    font-family: Sometype;
+    color: #a77b02;
+  }
+
+  .Hues{
+    width:100px;
+  }
+
+  .Colors{
+    width:200px
+  }
+  .Primary{
+    width:200px
+  }
