@@ -18,16 +18,8 @@
 
         <script>
 $(document).ready(function(){
-  $(".buttonyay").click(function(){
-    var h2 = $(".buttonyay");
-    startAnimation();
-    function startAnimation(){
-    h2.animate({height: 30}, "slow");
-    h2.animate({width: 30}, "slow");
-    h2.css("color", "#cbe1025e");
-    h2.animate({height: 10}, "slow");
-    h2.animate({width: 10}, "slow", startAnimation);
-    }
+  $("#buttonyay").click(function(){
+    $("#headerlinkyay").hide("slow", function(){
   });
 });
         </script>
@@ -43,7 +35,7 @@ $(document).ready(function(){
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item" id="headerlinkyay"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
                     </ul>
